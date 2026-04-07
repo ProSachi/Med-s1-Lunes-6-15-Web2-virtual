@@ -1,0 +1,169 @@
+:root {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #1f2937;
+	background: #f6f8fb;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #f6f8fb;
+}
+
+.container {
+	width: min(1100px, 92%);
+	margin: 0 auto;
+}
+
+.nav-wrapper {
+	background: #ba1d32;
+	color: #fff;
+	position: sticky;
+	top: 0;
+}
+
+.nav {
+	min-height: 72px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.brand {
+	font-size: 1.3rem;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	gap: 1.25rem;
+}
+
+.nav-links a {
+	color: #e2e8f0;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.nav-links a:hover {
+	color: #fff;
+}
+
+.section {
+	padding: 4rem 0;
+}
+
+.hero {
+	background: linear-gradient(120deg, #e2e8f0 0%, #f8fafc 100%);
+}
+
+.tag {
+	display: inline-block;
+	background: #0f172a;
+	color: #fff;
+	padding: 0.35rem 0.8rem;
+	border-radius: 999px;
+	margin-bottom: 1rem;
+	font-size: 0.85rem;
+}
+
+h2 {
+	margin-bottom: 0.9rem;
+	font-size: 2rem;
+}
+
+p {
+	line-height: 1.6;
+}
+
+.cards {
+	margin-top: 1.5rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 1rem;
+}
+
+.card {
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	border-radius: 12px;
+	padding: 1.2rem;
+}
+
+.card h3 {
+	margin-bottom: 0.6rem;
+}
+
+.contact-section {
+	background: #fff;
+}
+
+.contact-form {
+	margin-top: 1rem;
+	display: grid;
+	gap: 0.8rem;
+	max-width: 560px;
+}
+
+.contact-form input,
+.contact-form textarea {
+	border: 1px solid #cbd5e1;
+	border-radius: 8px;
+	padding: 0.8rem 0.9rem;
+	font-size: 1rem;
+}
+
+.contact-form button {
+	background: #0f172a;
+	color: #fff;
+	border: 0;
+	border-radius: 8px;
+	padding: 0.75rem 1rem;
+	cursor: pointer;
+}
+
+.footer {
+	background: #111827;
+	color: #e5e7eb;
+	padding: 2.5rem 0 1.2rem;
+}
+
+.footer-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1.2rem;
+}
+
+.footer h3,
+.footer h4 {
+	margin-bottom: 0.6rem;
+}
+
+.footer ul {
+	list-style: none;
+	display: grid;
+	gap: 0.3rem;
+}
+
+.footer-copy {
+	text-align: center;
+	margin-top: 1.5rem;
+	font-size: 0.9rem;
+}
+
+@media (max-width: 720px) {
+	.nav {
+		flex-direction: column;
+		justify-content: center;
+		gap: 0.7rem;
+		padding: 0.7rem 0;
+	}
+
+	h2 {
+		font-size: 1.6rem;
+	}
+}
